@@ -71,7 +71,6 @@ if !exists('g:neocomplcache_omni_patterns')
     let g:neocomplcache_omni_patterns = {}
 endif
 let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
-autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
 "rsenseのインストールフォルダがデフォルトと異なるので設定
 let g:rsenseHome = expand("/Users/maakun12/.rbenv/shims/rsense")
@@ -79,3 +78,27 @@ let g:rsenseUseOmniFunc = 1
 
 " yankをclipboardにコピー
 set clipboard+=unnamed
+
+" file type PHP
+augroup vimrc-filetype
+  autocmd!
+  " PHPだったらインデント幅が４で
+  autocmd BufNewFile,BufRead *.php set filetype=php
+  autocmd FileType php setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
+
+  " Rubyだったらインデント幅は2にしたい
+  autocmd BufNewFile,BufRead *.rb set filetype=ruby
+  autocmd BufNewFile,BufRead *.ruby set filetype=ruby
+  autocmd FileType ruby setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
+
+function! s:PHPLint()
+  let s:result = system('php -l ' . bufname(""))
+  let s:count = split(s:result, "\n")
+  echo s:result
+endfunction
+
+augroup php-lint
+  autocmd!
+  autocmd BufWritePost *.php call <SID>PHPLint()
+augroup END
