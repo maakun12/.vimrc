@@ -79,7 +79,6 @@ let g:rsenseUseOmniFunc = 1
 " yankをclipboardにコピー
 set clipboard+=unnamed
 
-" file type PHP
 augroup vimrc-filetype
   autocmd!
   " PHPだったらインデント幅が４で
@@ -102,3 +101,8 @@ augroup php-lint
   autocmd!
   autocmd BufWritePost *.php call <SID>PHPLint()
 augroup END
+
+aug space
+    au!
+  autocmd BufWritePre *.c,*.py,*.go,*.php,*.rb :%s/\s\+$//e
+aug END
