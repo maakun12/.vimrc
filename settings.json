@@ -1,0 +1,29 @@
+{
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onWindowChange",
+  "editor.formatOnSave": true,
+  "workbench.list.openMode": "doubleClick",
+  "workbench.editor.enablePreview": true,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "extensions.autoUpdate": false,
+  "vim.useSystemClipboard": true,
+  "vim.cmdLineInitialColon": true,
+  "vim.hlsearch": true,
+  "vim.easymotion": true,
+  "vim.visualstar": true,
+  "vim.useCtrlKeys": true,
+  "[shellscript]": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4
+  }
+}
+
