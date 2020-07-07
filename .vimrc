@@ -1,3 +1,15 @@
+" Vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+" jedi-vim
+" https://github.com/davidhalter/jedi-vim
+Plugin 'davidhalter/jedi-vim'
+call vundle#end()
+filetype plugin indent on
+
 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
@@ -81,11 +93,11 @@ set clipboard+=unnamed
 
 augroup vimrc-filetype
   autocmd!
-  " PHPだったらインデント幅が４で
+  " PHP
   autocmd BufNewFile,BufRead *.php set filetype=php
   autocmd FileType php setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
 
-  " Rubyだったらインデント幅は2にしたい
+  " Ruby
   autocmd BufNewFile,BufRead *.rb set filetype=ruby
   autocmd BufNewFile,BufRead *.ruby set filetype=ruby
   autocmd FileType ruby setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
@@ -106,3 +118,5 @@ aug space
     au!
   autocmd BufWritePre *.c,*.py,*.go,*.php,*.rb :%s/\s\+$//e
 aug END
+
+" autocomplete
