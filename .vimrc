@@ -7,6 +7,9 @@ Plugin 'VundleVim/Vundle.vim'
 " jedi-vim
 " https://github.com/davidhalter/jedi-vim
 Plugin 'davidhalter/jedi-vim'
+
+" golang
+Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 
