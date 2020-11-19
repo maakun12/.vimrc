@@ -91,6 +91,8 @@ let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 let g:rsenseHome = expand("/Users/maakun12/.rbenv/shims/rsense")
 let g:rsenseUseOmniFunc = 1
 
+let g:go_fmt_command = "goimports"
+
 " yankをclipboardにコピー
 set clipboard+=unnamed
 
