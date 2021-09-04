@@ -7,9 +7,9 @@ Plugin 'VundleVim/Vundle.vim'
 " jedi-vim
 " https://github.com/davidhalter/jedi-vim
 Plugin 'davidhalter/jedi-vim'
-
-" golang
 Plugin 'fatih/vim-go'
+Plugin 'dense-analysis/ale'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -92,6 +92,12 @@ let g:rsenseHome = expand("/Users/maakun12/.rbenv/shims/rsense")
 let g:rsenseUseOmniFunc = 1
 
 let g:go_fmt_command = "goimports"
+let g:go_list_type = "quickfix"
+
+"php
+let g:ale_fixers = {}
+let g:ale_fixers['php'] = ['php_cs_fixer']
+let g:ale_fix_on_save = 1
 
 " yankをclipboardにコピー
 set clipboard+=unnamed
