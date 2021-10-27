@@ -9,9 +9,17 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'fatih/vim-go'
 Plugin 'dense-analysis/ale'
+" color theme
+Plugin 'ghifarit53/tokyonight-vim'
 
 call vundle#end()
 filetype plugin indent on
+
+" Color theme
+set termguicolors
+let g:tokyonight_style = 'storm' " available: night, storm
+
+colorscheme tokyonight
 
 " setting
 "文字コードをUFT-8に設定
