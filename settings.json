@@ -1,4 +1,5 @@
 {
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "onWindowChange",
@@ -14,6 +15,8 @@
   "vim.easymotion": true,
   "vim.visualstar": true,
   "vim.useCtrlKeys": true,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "~/.vimrc",
   "[shellscript]": {
     "editor.detectIndentation": false,
     "editor.tabSize": 2,
@@ -24,6 +27,16 @@
     "editor.insertSpaces": true,
     "editor.detectIndentation": true,
     "editor.tabSize": 4
-  }
+  },
+  "explorer.autoReveal": false,
+  "go.useLanguageServer": true,
+  "gopls": {
+    "usePlaceholders": true, // add parameter placeholders when completing a function
+    // Experimental settings
+    "completeUnimported": true, // autocomplete unimported packages
+    "deepCompletion": true, // enable deep completion
+  },
+  "workbench.colorTheme": "1984 - Orwellian",
+  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons"
 }
 

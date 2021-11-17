@@ -1,0 +1,119 @@
+[
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.split",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.terminal.split",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+shift+5",
+        "command": "-workbench.action.terminal.split",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.terminal.focusAtIndex1",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.terminal.focusAtIndex2",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.terminal.focusAtIndex3",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.terminal.focusAtIndex4",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.terminal.focusAtIndex5",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.terminal.focusAtIndex6",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.terminal.focusAtIndex7",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.terminal.focusAtIndex8",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.terminal.focusAtIndex9",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+k cmd+\\",
+        "command": "-workbench.action.splitEditorOrthogonal"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "cmd+k cmd+right",
+        "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "cmd+k cmd+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+5",
+        "command": "-workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported"
+    }
+]
+
